@@ -1,0 +1,26 @@
+.logo {
+  margin-top: 3.125rem;
+  margin-bottom: 3.4375rem;
+}
+
+header {
+  height: 100vh;
+}
+
+.greeting {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  width: 2.775rem;
+  height: 1.2rem;
+  letter-spacing: 1.0825rem;
+}
+
+.pink-font {
+  color: var(--DesaturatedRed);
+  font-weight: 300;
+}
+
+.black-font {
+  color: var(--DarkGrayishRed);
+  font-weight: 600;
+}

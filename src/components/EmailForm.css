@@ -1,0 +1,56 @@
+.input-container input {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 3.125rem;
+  border: 1px solid var(--DesaturatedRed);
+  width: 27.75rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--DarkGrayishRed);
+}
+
+.input-container input:focus {
+  border-color: var(--DesaturatedRed);
+  box-shadow: 0 0 0 2px rgba(218, 186, 186, 0.5);
+  outline: none;
+}
+
+.input-container ::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--DesaturatedRed);
+  opacity: 0.5;
+}
+
+.input-container button {
+  font-size: 1.25rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 0.625rem;
+  margin-left: -6.25rem;
+  padding: 0.625rem 1.25rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  color: white;
+  border: none;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  width: 6.25rem;
+  height: 3.5rem;
+}
+
+.input-container button:hover {
+  background: linear-gradient(135deg, hsl(0, 100%, 97%), hsl(0, 100%, 80%));
+  /*   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
+}
+
+.error {
+  color: var(--DesaturatedRed);
+  margin-top: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.success {
+  color: rgb(0, 121, 0);
+  font-size: 1rem;
+  margin-top: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+}

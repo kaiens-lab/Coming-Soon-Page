@@ -1,0 +1,8 @@
+.description {
+  color: var(--DesaturatedRed);
+  font-family: "Josefin Sans";
+  width: 27.75rem;
+  height: 12rem;
+  line-height: 1.5;
+  margin-bottom: 3.125rem;
+}

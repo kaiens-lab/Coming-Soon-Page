@@ -2,12 +2,15 @@
 
 import React from "react";
 import logo from "../assets/images/logo.svg";
+import "./Header.css";
 
 function Header() {
   return (
     <header>
-      <img src={logo} alt="logo" />
-      <h1>Welcome to Our Site</h1>
+      <img src={logo} className="logo" alt="logo" />
+      <p className="greeting pink-font">WE'RE</p>
+      <p className="greeting black-font "> COMING</p>
+      <p className="greeting black-font"> SOON</p>
     </header>
   );
 }

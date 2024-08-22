@@ -1,39 +1,41 @@
-//包含一個輸入框&提交按鈕的表單
-
 import React, { useState } from "react";
+import "./EmailForm.css";
+import errorIcon from "../assets/images/icon-error.svg";
 
-const EmailForm = () => {
+function EmailForm() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!validateEmail(email)) {
-      setError("Please enter a valid email");
+
+    if (validateEmail(email)) {
+      setSuccess("Email submitted successfully!");
+      setError(""); // 清除錯誤消息
     } else {
-      // Handle form submission (e.g., send to server)
-      setError("");
-      alert("Email submitted successfully");
+      setError("Please provid a valid email.");
+      setSuccess(""); // 清除成功消息
     }
   };
 
   const validateEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="input-container" noValidate>
       <input
         type="email"
         placeholder="Email Address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <button type="submit">Submit</button>
+      <button type="submit">{">"}</button>
       {error && <p className="error">{error}</p>}
+      {success && <p className="success">{success}</p>}
     </form>
   );
-};
+}
 
 export default EmailForm;
