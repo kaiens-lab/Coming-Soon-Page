@@ -12,7 +12,7 @@
   padding-left: 1.5rem;
 }
 
-.border-SoftRed {
+.input-error {
   border: 2px solid #d80202;
   background: none;
 }

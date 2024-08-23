@@ -34,9 +34,7 @@ const EmailForm = () => {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className={`input-email ${
-          isError ? "border-SoftRed" : "border-DesaturatedRed"
-        }`}
+        className={`input-email ${isError ? "input-error" : ""}`}
       />
       <button id="email-btn" onClick={handleSubmit}>
         {">"}
