@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+  padding: 0;
+  max-width: 1440px;
+  overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: "Josefin Sans", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
