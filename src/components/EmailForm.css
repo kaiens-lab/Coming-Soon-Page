@@ -1,28 +1,36 @@
-.input-container input {
-  box-sizing: border-box;
-  padding: 1.5rem;
+.input-email {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--DarkGrayishRed);
+  border: none;
+  background: none;
+  width: 26rem;
+  height: 3.25rem;
+  margin-bottom: 20px;
   border-radius: 3.125rem;
   border: 1px solid var(--DesaturatedRed);
-  width: 27.75rem;
-  height: 3.5rem;
-  font-size: 1rem;
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--DarkGrayishRed);
+  padding-left: 1.5rem;
 }
 
-.input-container input:focus {
+.border-SoftRed {
+  border: 2px solid #d80202;
+  background: none;
+}
+
+.input-email:focus {
   border-color: var(--DesaturatedRed);
   box-shadow: 0 0 0 2px rgba(218, 186, 186, 0.5);
   outline: none;
 }
 
-.input-container ::placeholder {
+.input-email ::placeholder {
   font-family: "Josefin Sans", sans-serif;
   color: var(--DesaturatedRed);
   opacity: 0.5;
 }
 
-.input-container button {
+#email-btn {
+  /* 提交按鈕的樣式 */
   font-size: 1.25rem;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.625rem;
@@ -34,23 +42,33 @@
   border-radius: 3.125rem;
   cursor: pointer;
   width: 6.25rem;
-  height: 3.5rem;
+  height: 3.75rem;
 }
 
-.input-container button:hover {
+#email-btn:hover {
   background: linear-gradient(135deg, hsl(0, 100%, 97%), hsl(0, 100%, 80%));
-  /*   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
-.error {
+.icon-wrong {
+  position: relative;
+  margin-left: -135px;
+  top: 0.45rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#email-message-wrong {
   color: var(--DesaturatedRed);
-  margin-top: 0.3125rem;
-  padding: 0.625rem 1.25rem;
+  margin-top: -1rem;
+  padding: 0.625rem 1.5rem;
 }
 
-.success {
+#email-message-success {
   color: rgb(0, 121, 0);
-  font-size: 1rem;
-  margin-top: 0.3125rem;
-  padding: 0.625rem 1.25rem;
+  margin-top: -1rem;
+  padding: 0.625rem 1.5rem;
 }
