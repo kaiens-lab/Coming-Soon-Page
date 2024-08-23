@@ -23,14 +23,13 @@
   outline: none;
 }
 
-.input-email ::placeholder {
+.input-email::placeholder {
   font-family: "Josefin Sans", sans-serif;
   color: var(--DesaturatedRed);
   opacity: 0.5;
 }
 
 #email-btn {
-  /* 提交按鈕的樣式 */
   font-size: 1.25rem;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.625rem;
@@ -71,4 +70,16 @@
   color: rgb(0, 121, 0);
   margin-top: -1rem;
   padding: 0.625rem 1.5rem;
+}
+
+@media screen and (max-width: 1090px) {
+  .input-email {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 860px) {
+  .input-email {
+    width: 20rem;
+  }
 }

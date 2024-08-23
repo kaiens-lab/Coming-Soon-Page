@@ -1,10 +1,25 @@
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  max-width: 1440px;
+}
+
+body {
+  width: 100%;
   overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
 
+#root {
+  height: 100%;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+@media (min-width: 375px) and (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+}

@@ -1,10 +1,10 @@
-.logo {
-  margin-bottom: 3.4375rem;
+header {
+  height: auto;
+  padding-top: 0;
 }
 
-header {
-  height: auto; /* 调整为自动高度 */
-  padding-top: 0;
+.content-container {
+  padding-left: 100px;
 }
 
 .greeting {

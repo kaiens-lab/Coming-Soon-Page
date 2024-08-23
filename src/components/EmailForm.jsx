@@ -32,6 +32,7 @@ const EmailForm = () => {
       <input
         id="input-email"
         type="email"
+        placeholder="EmailAddress"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className={`input-email ${isError ? "input-error" : ""}`}
