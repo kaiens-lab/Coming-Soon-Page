@@ -1,0 +1,52 @@
+header {
+  height: auto;
+  padding-top: 0;
+}
+
+.content-container {
+  padding-left: 6.25rem;
+}
+
+.greeting {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  width: 2.775rem;
+  height: 1.2rem;
+  letter-spacing: 1.0825rem;
+}
+
+.pink-font {
+  color: var(--DesaturatedRed);
+  font-weight: 300;
+}
+
+.black-font {
+  color: var(--DarkGrayishRed);
+  font-weight: 600;
+}
+
+@media (max-width: 765px) {
+  .content-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+    display: block;
+    text-align: center;
+  }
+  .greeting {
+    letter-spacing: 10.83px;
+    height: 0.2rem;
+  }
+
+  .pink-font {
+    font-size: 2.5rem;
+    padding-left: 6.5rem;
+  }
+  .black-font {
+    padding-left: 4rem;
+    font-size: 2.5rem;
+  }
+  .black-font-mobile {
+    padding-left: 6.25rem;
+  }
+}

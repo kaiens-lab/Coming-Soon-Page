@@ -32,27 +32,32 @@
   display: none;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+.content-footer {
+  display: block;
+  padding-top: 2.5rem;
+  padding-left: 6.25rem;
+}
+
+@media (max-width: 765px) {
   .app {
-    flex-direction: column; /* 改變順序，讓圖片在下方 */
+    flex-direction: column;
     height: auto;
   }
 
-  .logo {
-    order: 1;
-  }
-
   .left-section {
-    order: 2;
-  }
-
-  .right-section {
-    order: 1;
-    .hero-desktop {
-      display: none;
-    }
+    padding: 0%;
     .hero-mobile {
       display: block;
+      margin-top: -1.25rem;
     }
+  }
+
+  .content-footer {
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
+
+  .hero-desktop {
+    display: none;
   }
 }

@@ -8,10 +8,9 @@ function Header() {
     <header>
       <p className="greeting pink-font">WE'RE</p>
       <p className="greeting black-font "> COMING</p>
-      <p className="greeting black-font"> SOON</p>
+      <p className="greeting black-font black-font-mobile"> SOON</p>
     </header>
   );
 }
 
 export default Header;
-

@@ -1,15 +1,21 @@
+.email-form {
+  display: flex;
+  align-items: center;
+}
+
 .input-email {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   color: var(--DarkGrayishRed);
   border: none;
   background: none;
-  width: 26rem;
+  width: 24rem;
   height: 3.25rem;
   margin-bottom: 1.25rem;
   border-radius: 3.125rem;
   border: 1px solid var(--DesaturatedRed);
   padding-left: 1.5rem;
+  position: relative; /* 添加相對定位 */
 }
 
 .input-error {
@@ -42,6 +48,8 @@
   cursor: pointer;
   width: 6.25rem;
   height: 3.75rem;
+  position: relative;
+  top: -0.9375rem;
 }
 
 #email-btn:hover {
@@ -53,7 +61,7 @@
 .icon-wrong {
   position: relative;
   margin-left: -8.4375rem;
-  top: 0.45rem;
+  top: -0.5rem;
 }
 
 .hidden {
@@ -61,25 +69,47 @@
 }
 
 #email-message-wrong {
-  color: var(--DesaturatedRed);
-  margin-top: -1rem;
-  padding: 0.625rem 1.5rem;
+  color: var(--SoftRed);
+  padding-top: 4rem;
 }
 
 #email-message-success {
   color: rgb(0, 121, 0);
+}
+
+#email-message-wrong,
+#email-message-success {
   margin-top: -1rem;
   padding: 0.625rem 1.5rem;
 }
 
-@media screen and (max-width: 1090px) {
-  .input-email {
-    width: 20rem;
+@media (max-width: 765px) {
+  .email-form {
+    margin-bottom: 0rem;
   }
-}
 
-@media (min-width: 375px) and (max-width: 860px) {
   .input-email {
-    width: 20rem;
+    width: 16rem;
+    height: 2.8125rem;
+    left: 3.125rem;
+    margin-top: 0.625rem;
+  }
+  #email-btn {
+    width: 3.75rem;
+    height: 3.125rem;
+    right: -6.25rem;
+    top: -0.625rem;
+  }
+
+  .icon-wrong {
+    margin-left: 0rem;
+    top: -0.1rem;
+  }
+
+  #email-message-wrong {
+    margin-left: -1.25rem;
+  }
+  #email-message-success {
+    margin-left: -9.375rem;
   }
 }

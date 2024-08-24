@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--DarkGrayishRed);
+  font-size: 0.8rem;
+  margin-left: -4rem;
+  opacity: 0.8;
+}
+
+.footer a {
+  color: var(--DesaturatedRed);
+}
+
+@media (max-width: 765px) {
+  .footer {
+    margin-left: 0.5rem;
+  }
+}

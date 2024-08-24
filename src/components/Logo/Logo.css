@@ -4,8 +4,9 @@
   padding-top: 3.75rem;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 765px) {
   .logo {
-    margin-top: 0;
+    padding-left: 2.5rem;
+    padding-top: 1.875rem;
   }
 }
