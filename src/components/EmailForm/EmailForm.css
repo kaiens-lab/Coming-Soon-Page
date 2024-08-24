@@ -18,6 +18,7 @@
   position: relative; /* 添加相對定位 */
 }
 
+/* Styling for the email input field in error state */
 .input-error {
   border: 2px solid #f96464;
   background: none;
@@ -64,6 +65,8 @@
   top: -0.5rem;
 }
 
+/* Used to hide the error icon when there is no validation error 
+in the email input */
 .hidden {
   display: none;
 }

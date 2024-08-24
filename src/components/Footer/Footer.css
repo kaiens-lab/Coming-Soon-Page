@@ -1,10 +1,8 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: fixed;
   color: var(--DarkGrayishRed);
   font-size: 0.8rem;
-  margin-left: -4rem;
+  margin-left: 4rem;
   opacity: 0.8;
 }
 
@@ -14,6 +12,6 @@
 
 @media (max-width: 765px) {
   .footer {
-    margin-left: 0.5rem;
+    margin-left: 2rem;
   }
 }
