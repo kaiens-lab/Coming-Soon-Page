@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Coming-Soon-Page/static/css/main.2337e12b.css",
+    "main.js": "/Coming-Soon-Page/static/js/main.5d15c673.js",
+    "static/js/453.40fd37cd.chunk.js": "/Coming-Soon-Page/static/js/453.40fd37cd.chunk.js",
+    "static/media/hero-desktop.jpg": "/Coming-Soon-Page/static/media/hero-desktop.659bc9a7221d265fe28f.jpg",
+    "static/media/hero-mobile.jpg": "/Coming-Soon-Page/static/media/hero-mobile.1afd055b71b78462d388.jpg",
+    "static/media/logo.svg": "/Coming-Soon-Page/static/media/logo.bfe35add16fb8c010b0231ce711541c6.svg",
+    "static/media/bg-pattern-desktop.svg": "/Coming-Soon-Page/static/media/bg-pattern-desktop.964ebd4dd8014fd040d7.svg",
+    "index.html": "/Coming-Soon-Page/index.html",
+    "static/media/icon-error.svg": "/Coming-Soon-Page/static/media/icon-error.77009af74a9c193a398a6476b25aa1f3.svg",
+    "main.2337e12b.css.map": "/Coming-Soon-Page/static/css/main.2337e12b.css.map",
+    "main.5d15c673.js.map": "/Coming-Soon-Page/static/js/main.5d15c673.js.map",
+    "453.40fd37cd.chunk.js.map": "/Coming-Soon-Page/static/js/453.40fd37cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2337e12b.css",
+    "static/js/main.5d15c673.js"
+  ]
+}
